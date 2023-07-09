@@ -582,6 +582,15 @@ section {
   max-width: 18rem;
 }
 
+.client img:hover {
+  filter: none;
+  transform: scale(1.1);
+}
+@media (max-width: 768px) {
+  .client img {
+    max-width: 40%;
+  }
+
 @media(max-width: 1240px) {
   .client__logos {
       overflow-x: scroll;
