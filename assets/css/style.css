@@ -570,10 +570,9 @@ section {
 /* --------------------------------------- */
 
 .client__logos {
+  display: flex;
   justify-content: space-between;
-  max-width: 45%;
-  transition: all 0.4s ease-in-out;
-  display: inline-block;
+  filter: invert(100%) grayscale(100%) opacity(.8);
 }
 
 .client__logo {
@@ -591,7 +590,6 @@ section {
       margin-right: var(--gutter-medium);
   }
 }
-
 /*--------------------------------------------------------------
 # About Us
 --------------------------------------------------------------*/
