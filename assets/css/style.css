@@ -570,9 +570,11 @@ section {
 /* --------------------------------------- */
 
 .client__logos {
-  display: flex;
   justify-content: space-between;
   filter: grayscale(100);
+  max-width: 45%;
+  transition: all 0.4s ease-in-out;
+  display: inline-block;
 }
 
 .client__logo {
