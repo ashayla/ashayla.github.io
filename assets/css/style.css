@@ -569,25 +569,27 @@ section {
 /* ----- Clients ----- */
 /* --------------------------------------- */
 
-.client__logos {
-  display: flex;
-  justify-content: space-between;
-  filter: invert(100%) grayscale(100%) opacity(.8);
+.clients {
+  padding: 12px 0;
+  text-align: center;
 }
 
-.client__logo {
-  height: 6.5rem;
-  max-width: 18rem;
+.clients img {
+  max-width: 45%;
+  transition: all 0.4s ease-in-out;
+  display: inline-block;
+  padding: 15px 0;
+  filter: grayscale(100);
 }
 
-@media(max-width: 1240px) {
-  .client__logos {
-      overflow-x: scroll;
-      padding: var(--gutter-normal);
-  }
+.clients img:hover {
+  filter: none;
+  transform: scale(1.1);
+}
 
-  .client__logo:not(:last-of-type) {
-      margin-right: var(--gutter-medium);
+@media (max-width: 768px) {
+  .clients img {
+    max-width: 40%;
   }
 }
 /*--------------------------------------------------------------
