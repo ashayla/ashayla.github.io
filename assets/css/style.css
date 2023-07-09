@@ -582,12 +582,12 @@ section {
   max-width: 18rem;
 }
 
-.client img:hover {
+.clients img:hover {
   filter: none;
   transform: scale(1.1);
 }
 @media (max-width: 768px) {
-  .client img {
+  .clients img {
     max-width: 40%;
   }
 
