@@ -577,7 +577,15 @@ section {
 .client__logo {
   height: 6.5rem;
   max-width: 18rem;
+  transition: all 0.4s ease-in-out;
+  display: inline-block;
+  padding: 15px 0;
+  filter: grayscale(100);
 }
+
+.client img:hover {
+  filter: none;
+  transform: scale(1.1);
 
 @media(max-width: 1240px) {
   .client__logos {
