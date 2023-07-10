@@ -575,6 +575,10 @@ section {
   transition: all 0.4s ease-in-out;
   display: inline-block;
 }
+.clients img:hover {
+  filter: none;
+  transform: scale(1.1);
+}
 
 .client__logo {
   height: 6.5rem;
@@ -590,6 +594,7 @@ section {
       margin-right: var(--gutter-medium);
   }
 }
+
 
 /*--------------------------------------------------------------
 # About Us
