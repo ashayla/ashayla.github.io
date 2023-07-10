@@ -586,6 +586,7 @@ section {
 .client img:hover {
   filter: none;
   transform: scale(1.1);
+}
 
 @media(max-width: 1240px) {
   .client__logos {
