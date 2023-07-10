@@ -571,7 +571,7 @@ section {
 .client__logos {
   display: flex;
   justify-content: space-between;
-  filter:opacity(.8);
+  filter: opacity(.8);
 }
 
 .client__logo {
