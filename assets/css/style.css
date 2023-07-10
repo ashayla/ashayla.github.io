@@ -574,9 +574,9 @@ section {
 }
 
 .clients img {
-  max-width: 25%;
+  max-width: 45%;
   transition: all 0.4s ease-in-out;
-  display: inline-block;
+  display: flex;
   padding: 15px 0;
   filter: grayscale(100);
 }
