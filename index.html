@@ -1,343 +1,432 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ashayla Williams — XR Developer &amp; Simulation Designer</title>
+<meta name="description" content="Ashayla Williams is an XR developer building VR, AR, and MR training simulations for manufacturing, biopharma, and accessibility — grounded in HCI research at Purdue.">
+<link rel="icon" href="assets/img/favicon.png">
 
-  <title>Ashayla Williams - VR/AR Developer</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-  <!-- Vendor CSS -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Main CSS  -->
-  <link href="assets/css/style.css" rel="stylesheet">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.4-rc.1/web3.min.js"></script>
-  <script>
-  
-  /* To connect using MetaMask */
-  async function connect() {
-   if (window.ethereum) {
-   
-    await window.ethereum.request({ method: "eth_requestAccounts" });
-    window.web3 = new Web3(window.ethereum);
-    
-   } else {
-    console.log("No wallet");
-   }
-  }
-  
-  </script>
+<link rel="stylesheet" href="assets/css/site.css">
 </head>
+<body id="top">
 
-<body>
+<header id="site-header">
+  <div class="container nav-inner">
+    <a href="#top" class="brand"><span class="dot"></span><b>Ashayla Williams</b><span>/ XR DEV</span></a>
+    <nav class="nav-links">
+      <a href="#work">Work</a>
+      <a href="#research">Research</a>
+      <a href="#experience">Experience</a>
+      <a href="#about">About</a>
+      <a href="https://www.spextra-nsf.org/people" class="cta" target="_blank" rel="noopener">Spextra ↗</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><line x1="1" y1="4" x2="17" y2="4"/><line x1="1" y1="9" x2="17" y2="9"/><line x1="1" y1="14" x2="17" y2="14"/></svg>
+    </button>
+  </div>
+</header>
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top ">
-    <div class="container d-flex align-items-center">
-
-      <h1 class="logo me-auto"><a href="index.html">Ashayla Williams</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link   scrollto" href="#portfolio">Portfolio</a></li>
-          <li><a class="nav-link scrollto" href="#team">About</a></li>
-          <li><a href="#contact" class="btn-get-started scrollto">Contact</a></li>
-     
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
+<!-- ============================ HERO ============================ -->
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="reveal in">
+      <span class="eyebrow">XR Developer / HCI Researcher</span>
+      <h1>I design <em>virtual reality</em> that trains people to run real machines.</h1>
+      <p class="lede">5+ years building interactive VR, AR, and MR training simulations in Unity — from planetary gear assemblies to biopharma process equipment — grounded in human‑computer interaction research at Purdue.</p>
+      <div class="hero-ctas">
+        <a href="#work" class="btn btn-primary">View case studies <span class="btn-arrow">→</span></a>
+        <a href="https://www.spextra-nsf.org/people" target="_blank" rel="noopener" class="btn btn-ghost">See research at Spextra</a>
+      </div>
+      <div class="hero-meta">
+        <span><i class="ok"></i>Based in Houston, TX</span>
+        <span>Unity · Unreal · Maya · 3ds Max</span>
+        <span>MS Modeling, Simulation &amp; Visualization — Purdue</span>
+      </div>
     </div>
-  </header><!-- End Header -->
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center bg-blur">
+    <div class="reveal in hero-visual">
+      <div class="shot" style="--ar:1/1.08;">
+        <img src="./assets/img/final111.png" alt="Ashayla Williams in a VR/AR environment" data-fallback-label="PORTRAIT — final111.png">
+        <div class="bbox-frame"><span class="c1"></span><span class="c2"></span><span class="c3"></span><span class="c4"></span></div>
+        <span class="scan-label tl">ID // XR_DEVELOPER</span>
+        <span class="scan-label br">STATUS · CREATING</span>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
-          <h1>AR/VR Developer based in Los Angeles, CA.</h1>
-          <h2></h2>
-          <div class="d-flex justify-content-center justify-content-lg-start">
-            <a href="https://www.spextra-nsf.org/outcomes" class="btn-get-started scrollto">Work</a>
-            <a href="https://www.youtube.com/watch?v=azchfozdoSE" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+<!-- ============================ SPEC PLATE ============================ -->
+<div class="plate-wrap container">
+  <div class="plate reveal">
+    <div class="plate-item">
+      <div class="plate-num">5<span>+</span></div>
+      <div class="plate-label">Years — VR / AR / MR Dev</div>
+    </div>
+    <div class="plate-item">
+      <div class="plate-num"><span>4</span></div>
+      <div class="plate-label">Published Research Papers</div>
+    </div>
+    <div class="plate-item">
+      <div class="plate-num">M<span>S</span></div>
+      <div class="plate-label">Modeling, Sim &amp; Viz — Purdue</div>
+    </div>
+    <div class="plate-item">
+      <div class="plate-num">6<span>+</span></div>
+      <div class="plate-label">VR / AR / MR Case Studies</div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================ WORK ============================ -->
+<section id="work">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <span class="eyebrow">Selected Work</span>
+        <h2>Training simulations for equipment<br>people rarely get to touch.</h2>
+      </div>
+      <p class="desc">Each project pairs 3D modeling and rendering with interaction and UI design — built for real training outcomes, not tech demos.</p>
+    </div>
+
+    <div class="filters reveal">
+      <button data-filter="*" class="active">All</button>
+      <button data-filter="vr">Virtual Reality</button>
+      <button data-filter="mr">Mixed Reality</button>
+      <button data-filter="viz">Visualization</button>
+    </div>
+
+    <div class="work-grid">
+
+      <article class="work-card show reveal" data-cat="vr">
+        <a href="portfolio-details.html" class="link-wrap">
+          <div class="shot">
+            <img src="./images/7.png" alt="Equipment operation trainer — Module 01" data-fallback-label="7.png">
+            <div class="bbox-frame"><span class="c1"></span><span class="c2"></span><span class="c3"></span><span class="c4"></span></div>
+            <span class="tag" style="position:absolute;top:12px;left:12px;">VR SIM</span>
           </div>
+          <div class="work-body">
+            <div class="work-kicker"><span class="work-idx">CASE // 01</span></div>
+            <h3>Equipment Operation Trainer — Module 01</h3>
+            <p>A high‑fidelity 3D equipment model built for hands‑on manufacturing education inside a headset, part of an ongoing research thread on affordable VR/AR training for smart manufacturing.</p>
+            <div class="chip-row"><span class="chip">Unity</span><span class="chip">C#</span><span class="chip">3D Modeling</span><span class="chip">Oculus</span></div>
+          </div>
+        </a>
+      </article>
+
+      <article class="work-card show reveal" data-cat="vr">
+        <a href="portfolio-details2.html" class="link-wrap">
+          <div class="shot">
+            <img src="./images2/binder01.jpg" alt="Equipment operation trainer — Module 02" data-fallback-label="binder01.jpg">
+            <div class="bbox-frame"><span class="c1"></span><span class="c2"></span><span class="c3"></span><span class="c4"></span></div>
+            <span class="tag" style="position:absolute;top:12px;left:12px;">VR SIM</span>
+          </div>
+          <div class="work-body">
+            <div class="work-kicker"><span class="work-idx">CASE // 02</span></div>
+            <h3>Equipment Operation Trainer — Module 02</h3>
+            <p>A companion module extending the equipment‑training pipeline with new geometry, texture work, and interaction states tuned for VR walkthroughs.</p>
+            <div class="chip-row"><span class="chip">Unity</span><span class="chip">C#</span><span class="chip">3D Modeling</span><span class="chip">Oculus</span></div>
+          </div>
+        </a>
+      </article>
+
+      <article class="work-card show reveal" data-cat="vr">
+        <a href="portfolio-details3.html" class="link-wrap">
+          <div class="shot">
+            <img src="./images/PVR.png" alt="Planetary gear assembly trainer" data-fallback-label="PVR.png">
+            <div class="bbox-frame"><span class="c1"></span><span class="c2"></span><span class="c3"></span><span class="c4"></span></div>
+            <span class="tag" style="position:absolute;top:12px;left:12px;">VR SIM</span>
+          </div>
+          <div class="work-body">
+            <div class="work-kicker"><span class="work-idx">CASE // 03</span></div>
+            <h3>Planetary Gear Assembly Trainer</h3>
+            <p>Step‑by‑step VR assembly of a planetary gear system, designed to teach procedure and part relationships before a trainee ever touches the real machine.</p>
+            <div class="chip-row"><span class="chip">Unity</span><span class="chip">C#</span><span class="chip">UX Design</span><span class="chip">Oculus</span></div>
+          </div>
+        </a>
+      </article>
+
+      <article class="work-card show reveal" data-cat="vr">
+        <a href="portfolio-details6.html" class="link-wrap">
+          <div class="shot">
+            <img src="./images2/HPP.jpg" alt="Biopharma High Pressure Processing trainer" data-fallback-label="HPP.jpg">
+            <div class="bbox-frame"><span class="c1"></span><span class="c2"></span><span class="c3"></span><span class="c4"></span></div>
+            <span class="tag" style="position:absolute;top:12px;left:12px;">VR SIM</span>
+          </div>
+          <div class="work-body">
+            <div class="work-kicker"><span class="work-idx">CASE // 04</span></div>
+            <h3>Biopharma HPP Process Trainer</h3>
+            <p>A digital‑twin‑style model of a High Pressure Processing system for biotech/biopharma manufacturing training — the equipment featured in her 2025 ICVARS conference paper.</p>
+            <div class="chip-row"><span class="chip">3ds Max</span><span class="chip">Maya</span><span class="chip">Photoshop</span></div>
+          </div>
+        </a>
+      </article>
+
+      <article class="work-card show reveal" data-cat="mr">
+        <a href="portfolio-details4.html" class="link-wrap">
+          <div class="shot">
+            <img src="./images/Mixed Reality Sample.png" alt="AR social skill-building app for children with autism" data-fallback-label="Mixed Reality Sample.png">
+            <div class="bbox-frame"><span class="c1"></span><span class="c2"></span><span class="c3"></span><span class="c4"></span></div>
+            <span class="tag cyan" style="position:absolute;top:12px;left:12px;">MR APP</span>
+          </div>
+          <div class="work-body">
+            <div class="work-kicker"><span class="work-idx">CASE // 05</span></div>
+            <h3>AR Social‑Skills Companion for ASD</h3>
+            <p>A mixed‑reality application that layers social‑skill‑building graphics over the real world for children with autism spectrum disorder — published research from her time at Purdue.</p>
+            <div class="chip-row"><span class="chip">Unity</span><span class="chip">C#</span><span class="chip">ARKit</span><span class="chip">3D Modeling</span></div>
+          </div>
+        </a>
+      </article>
+
+      <article class="work-card show reveal" data-cat="viz">
+        <a href="portfolio-details5.html" class="link-wrap">
+          <div class="shot">
+            <img src="./images2/bathroomMain.jpg" alt="Photorealistic interior lighting study" data-fallback-label="bathroomMain.jpg">
+            <div class="bbox-frame"><span class="c1"></span><span class="c2"></span><span class="c3"></span><span class="c4"></span></div>
+            <span class="tag cyan" style="position:absolute;top:12px;left:12px;">VISUALIZATION</span>
+          </div>
+          <div class="work-body">
+            <div class="work-kicker"><span class="work-idx">CASE // 06</span></div>
+            <h3>Photoreal Interior Lighting Study</h3>
+            <p>A fully rendered interior environment used to push lighting, material, and composition skills outside of a VR pipeline.</p>
+            <div class="chip-row"><span class="chip">Maya</span><span class="chip">Photoshop</span><span class="chip">Illustrator</span></div>
+          </div>
+        </a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<hr class="divider container">
+
+<!-- ============================ RESEARCH ============================ -->
+<section id="research">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <span class="eyebrow">Research</span>
+        <h2>Published work behind the projects.</h2>
+      </div>
+      <p class="desc">The case studies above aren't one-off demos — they sit inside a body of peer-reviewed research on XR training and simulation.</p>
+    </div>
+
+    <div class="doc-list reveal">
+      <div class="doc">
+        <span class="doc-id">DOC // 01</span>
+        <div class="doc-body">
+          <h3>A Detailed Review of the Design and Evaluation of XR Applications in STEM Education and Training</h3>
+          <p class="meta">Chandramouli, M., Zafar, A., &amp; Williams, A. · Electronics, 14(19), 3818 · 2025</p>
         </div>
-        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
-          <img src="assets/img/final111.png" class="img-fluid animated" alt="">
+        <div class="doc-link"><a href="https://doi.org/10.3390/electronics14193818" target="_blank" rel="noopener">View DOI →</a></div>
+      </div>
+
+      <div class="doc">
+        <span class="doc-id">DOC // 02</span>
+        <div class="doc-body">
+          <h3>Multimodal Virtual Reality &amp; Digital Twin‑Based Training for Specialized Process Equipment in Biotech/Biopharma Manufacturing</h3>
+          <p class="meta">Chandramouli, M., Nere, N. K., Shimpi, J., &amp; Williams, A. · ICVARS 2025, Birmingham, UK</p>
         </div>
+        <div class="doc-link"><a href="https://doi.org/10.1109/ICVARS66454.2025.11198712" target="_blank" rel="noopener">View DOI →</a></div>
+      </div>
+
+      <div class="doc">
+        <span class="doc-id">DOC // 03</span>
+        <div class="doc-body">
+          <h3>Affordable Virtual and Augmented Reality Training Modules for Workforce Development and Smart Manufacturing</h3>
+          <p class="meta">Chandramouli, M. &amp; Williams, A. · Journal of Manufacturing Engineering, 19(4), 101–107 · 2024</p>
+        </div>
+        <div class="doc-link"><a href="https://doi.org/10.37255/jme.v19i4pp101-107" target="_blank" rel="noopener">View DOI →</a></div>
+      </div>
+
+      <div class="doc">
+        <span class="doc-id">DOC // 04</span>
+        <div class="doc-body">
+          <h3>Augmented Reality‑Based Graphics Application to Assist Children with Autism Spectrum Disorder</h3>
+          <p class="meta">Williams, A. &amp; Chandramouli, M. · ASEE Virtual Annual Conference · 2021</p>
+        </div>
+        <div class="doc-link"><a href="https://doi.org/10.18260/1-2--36732" target="_blank" rel="noopener">View DOI →</a></div>
       </div>
     </div>
 
-  </section><!-- End Hero -->
+    <div class="reveal" style="margin-top:36px; display:flex; justify-content:center;">
+      <a class="btn btn-ghost" href="https://www.spextra-nsf.org/people" target="_blank" rel="noopener">See more research at Spextra (NSF) →</a>
+    </div>
+  </div>
+</section>
 
-  <main id="main">
-    <!-- ======= Clients Section ======= -->
-    <section id="clients" class="clients section-bg">
-      <div class="container">
-        <div class="section-title">
-          <h2 class="white-text" style="color:#ea1be6;">Skills</h2>
-        </div>
-        <div class="client__logos">
-            <img src="./images/Autodesk_3ds_Max-fSZTXpe5_brandlogos.net.svg" class="client__logo" alt="">
-            <img src="./images/Autodesk Maya.png" class="client__logo" alt="">
-            <img src="./images/unity.png" class="client__logo" alt="">
-            <img src="./images/unreal-engine.svg" class="client__logo" alt="">
-            <img src="./images/photoshop-svgrepo-com.svg" class="client__logo" alt="">
-            <img src="./images/adobe-illustrator-svgrepo-com.svg" class="client__logo" alt="">
-            <img src="./images/c--4.svg" class="client__logo" alt="">
-            <img src="./images/javascript-1.svg" class="client__logo" alt="">
-        </div>
-
+<!-- ============================ EXPERIENCE ============================ -->
+<section id="experience">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <span class="eyebrow">Experience</span>
+        <h2>Where the work happened.</h2>
       </div>
-    </section><!-- End Cliens Section -->
-  <!-- ======= About Us Section ======= -->
+    </div>
 
-    <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio section-bg ">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2 style="color:#ea1be6;">Portfolio</h2>
-          <p style="color:#ffffff;"> My work focuses on creating immersive equipment operation models and animations for training and instructional use. Each project combines interactive, user-centered design with photorealistic visuals, optimized for AR and VR experiences.</p>
-          <br>  
-          <a href="https://www.spextra-nsf.org/people" 
-          class="btn-get-started scrollto" 
-          style="font-weight: bold; font-size: 1.2rem; color: #ea1be6; background-color: #fff; padding: 10px 20px; border-radius: 8px; box-shadow: 0 0 10px #ea1be6; transition: transform 0.3s ease;"
-          onmouseover="this.style.transform='scale(1.1)';" 
-          onmouseout="this.style.transform='scale(1)';">
-          Explore Contributions
-       </a>
-        </div>
-
-        <ul id="portfolio-flters" class="d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
-          <li data-filter="*" class="filter-active">All</li>
-          <li data-filter=".filter-app">Virtual Reality</li>
-          <li data-filter=".filter-card">Mixed Reality</li>
-          <li data-filter=".filter-web">Other</li>
+    <div class="timeline reveal">
+      <div class="tl-item">
+        <div class="tl-head"><h3>PIA XR Solutions <span class="role">— Creative Media Specialist</span></h3><span class="tl-date">02/2026 – 05/2026</span></div>
+        <p class="org">Los Angeles, CA</p>
+        <ul>
+          <li>Developed interactive VR/AR applications and immersive digital experiences supporting learning, accessibility, and skill development.</li>
+          <li>Built and refined application interfaces, user interactions, feedback systems, and reusable digital components.</li>
+          <li>Prototyped, tested, and troubleshot application functionality based on usability findings and project requirements.</li>
         </ul>
+      </div>
 
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+      <div class="tl-item">
+        <div class="tl-head"><h3>Purdue University <span class="role">— External Consultant, UI/HCI Designer</span></h3><span class="tl-date">06/2024 – 01/2025</span></div>
+        <p class="org">Hammond, IN</p>
+        <ul>
+          <li>Developed interactive VR/AR applications in Unity — application logic, user interactions, UI systems, feedback mechanisms, and reusable components for simulation‑based learning.</li>
+          <li>Designed interfaces, wireframes, prototypes, and interaction flows using HCI and user‑centered design principles.</li>
+          <li>Evaluated usability and translated stakeholder feedback into practical interface and application improvements.</li>
+        </ul>
+      </div>
 
-    <!-- Project 1 -->
-    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-      <a href="portfolio-details.html" class="portfolio-img">
-        <img src="./images/7.png" class="img-fluid" alt="">
-      </a>
-      <div class="portfolio-info">
-        <h4>Project 1: Equipment</h4><br>
-        <p>Role: Modeling, Texturing, Lighting, Rendering, VR/AR</p>
-        <a href="./images/7.png"
-           data-gallery="portfolioGallery"
-           class="portfolio-lightbox preview-link"
-           title="Project 1">
-           <i class="bx bx-plus"></i>
+      <div class="tl-item">
+        <div class="tl-head"><h3>Purdue Northwest University <span class="role">— External Consultant, Simulation Design</span></h3><span class="tl-date">01/2023 – 06/2024</span></div>
+        <p class="org">Hammond, IN</p>
+        <ul>
+          <li>Designed and developed immersive VR training and simulation experiences for interactive learning environments.</li>
+          <li>Implemented VR/AR modules, interactive learning flows, user interactions, and feedback mechanisms; tested prototypes for usability.</li>
+          <li>Collaborated with stakeholders to define requirements and support iterative development through testing and troubleshooting.</li>
+        </ul>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-head"><h3>Transcom <span class="role">— Apple Technical Support Advisor</span></h3><span class="tl-date">04/2025 – 06/2026</span></div>
+        <p class="org">Denver, CO</p>
+        <ul>
+          <li>Diagnosed and resolved hardware, software, account, and connectivity issues in a high‑volume technical support environment.</li>
+          <li>Applied structured troubleshooting to identify root causes and determine appropriate technical solutions.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ SKILLS ============================ -->
+<section id="skills">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <span class="eyebrow">Toolkit</span>
+        <h2>What's under the hood.</h2>
+      </div>
+    </div>
+
+    <div class="logo-strip reveal">
+      <div class="logo-tile"><img src="./images/Autodesk_3ds_Max-fSZTXpe5_brandlogos.net.svg" alt="Autodesk 3ds Max" data-logo-name="3ds Max"></div>
+      <div class="logo-tile"><img src="./images/Autodesk Maya.png" alt="Autodesk Maya" data-logo-name="Maya"></div>
+      <div class="logo-tile"><img src="./images/unity.png" alt="Unity" data-logo-name="Unity"></div>
+      <div class="logo-tile"><img src="./images/unreal-engine.svg" alt="Unreal Engine" data-logo-name="Unreal Engine"></div>
+      <div class="logo-tile"><img src="./images/photoshop-svgrepo-com.svg" alt="Adobe Photoshop" data-logo-name="Photoshop"></div>
+      <div class="logo-tile"><img src="./images/adobe-illustrator-svgrepo-com.svg" alt="Adobe Illustrator" data-logo-name="Illustrator"></div>
+      <div class="logo-tile"><img src="./images/c--4.svg" alt="C++" data-logo-name="C++"></div>
+      <div class="logo-tile"><img src="./images/javascript-1.svg" alt="JavaScript" data-logo-name="JavaScript"></div>
+    </div>
+
+    <div class="skills-grid reveal">
+      <div class="skill-cell">
+        <h4>App Development</h4>
+        <div class="chip-row">
+          <span class="chip">Unity</span><span class="chip">VR/AR Dev</span><span class="chip">Interactive Apps</span><span class="chip">Simulation Dev</span><span class="chip">UI Development</span><span class="chip">Prototyping</span><span class="chip">Debugging</span>
+        </div>
+      </div>
+      <div class="skill-cell">
+        <h4>Development &amp; UX</h4>
+        <div class="chip-row">
+          <span class="chip">HCI</span><span class="chip">Interaction Design</span><span class="chip">Usability Testing</span><span class="chip">Requirements Analysis</span><span class="chip">Wireframing</span><span class="chip">User‑Centered Design</span>
+        </div>
+      </div>
+      <div class="skill-cell">
+        <h4>Tools &amp; Platforms</h4>
+        <div class="chip-row">
+          <span class="chip">Unity</span><span class="chip">Unreal Engine</span><span class="chip">Figma</span><span class="chip">Adobe CC</span><span class="chip">Camtasia</span><span class="chip">Maya</span><span class="chip">3ds Max</span><span class="chip">SolidWorks</span><span class="chip">Revit</span>
+        </div>
+      </div>
+      <div class="skill-cell">
+        <h4>Web Technologies</h4>
+        <div class="chip-row">
+          <span class="chip">HTML5</span><span class="chip">CSS3</span><span class="chip">Responsive Design</span>
+        </div>
+      </div>
+      <div class="skill-cell">
+        <h4>AI &amp; Productivity</h4>
+        <div class="chip-row">
+          <span class="chip">Generative AI Tools</span><span class="chip">AI‑Assisted Research</span><span class="chip">Technical Troubleshooting</span><span class="chip">Documentation</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ ABOUT ============================ -->
+<section id="about">
+  <div class="container about-grid">
+    <div class="reveal">
+      <div class="shot">
+        <img src="./images2/AWProfile2.jpg" alt="Ashayla Williams" data-fallback-label="AWProfile2.jpg">
+        <div class="bbox-frame"><span class="c1"></span><span class="c2"></span><span class="c3"></span><span class="c4"></span></div>
+      </div>
+    </div>
+    <div class="reveal about-body">
+      <span class="eyebrow">About</span>
+      <h2 style="margin:14px 0 22px;">Ashayla Williams</h2>
+      <p>I build immersive worlds tailored to diverse learners — particularly in health, job training, and education.</p>
+      <p>My focus is virtual and augmented reality development for real‑world training: taking equipment most people never get hands‑on access to and rebuilding it as a place they can practice in safely. That means 3D modeling, texturing, lighting, and rendering feeding into interactive, user‑centered VR/AR experiences — evaluated the same way any HCI research is evaluated, through usability testing and iteration.</p>
+      <p>I hold a Master of Science in Modeling, Simulation &amp; Visualization from Purdue University, where my consulting and research work produced four published papers spanning XR design in STEM education, smart‑manufacturing training, biopharma process simulation, and AR accessibility tools for children with autism.</p>
+      <div class="social-row">
+        <a href="https://www.linkedin.com/in/ashaylaw" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.14 1.45-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.59 0 4.26 2.36 4.26 5.44v6.3zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+        </a>
+        <a href="https://www.behance.net/piamon" target="_blank" rel="noopener" aria-label="Behance">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M7.8 10.6c.9 0 1.5-.5 1.5-1.3 0-.9-.6-1.3-1.5-1.3H4.9v2.6h2.9zm.3 5.4c1 0 1.7-.5 1.7-1.5s-.7-1.5-1.7-1.5H4.9v3h3.2zM2.5 6h5.6c2.3 0 3.6 1.1 3.6 2.9 0 1.2-.6 2-1.6 2.4 1.3.4 2 1.4 2 2.9 0 2.1-1.6 3.3-4.1 3.3H2.5V6zm12.4.6h5.8v1.3h-5.8V6.6zM15 12.4c.1-1.2.9-2 2.1-2 1.3 0 2 .8 2.1 2H15zm2.1-3.5c-2.4 0-4.2 1.7-4.2 4.3 0 2.7 1.7 4.3 4.3 4.3 2 0 3.5-1 3.9-2.7h-1.9c-.2.6-.9 1-2 1-1.3 0-2.1-.8-2.2-2.2h6.2v-.6c0-2.8-1.6-4.1-4.1-4.1z"/></svg>
+        </a>
+        <a href="mailto:ashaylawill@gmail.com" aria-label="Email">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
         </a>
       </div>
     </div>
+  </div>
+</section>
 
-      <!-- Project 2 -->
-  <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-    <a href="portfolio-details2.html" class="portfolio-img">
-      <img src="./images2/binder01.jpg" class="img-fluid" alt="">
-    </a>
-    <div class="portfolio-info">
-      <h4>Project 2: Equipment</h4><br>
-      <p>Role: Modeling, Texturing, Lighting, Rendering, VR/AR</p>
-      <a href="./images2/binder01.jpg"
-         data-gallery="portfolioGallery"
-         class="portfolio-lightbox preview-link"
-         title="Project 2">
-         <i class="bx bx-plus"></i>
-      </a>
+<!-- ============================ CONTACT ============================ -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-panel reveal">
+      <div>
+        <span class="eyebrow">Contact</span>
+        <h2>Let's build something people can actually walk through.</h2>
+        <p>Open to XR development, simulation design, and HCI‑focused roles. Reach out directly — I read everything myself.</p>
+      </div>
+      <div class="contact-actions">
+        <a class="email" href="mailto:ashaylawill@gmail.com">ashaylawill@gmail.com</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/ashaylaw" target="_blank" rel="noopener">Connect on LinkedIn</a>
+        <a class="btn btn-ghost" href="https://www.spextra-nsf.org/people" target="_blank" rel="noopener">View research profile</a>
+      </div>
     </div>
   </div>
+</section>
 
-
-          <!-- Project 3 -->
-  <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-    <a href="portfolio-details3.html" class="portfolio-img">
-      <img src="./images/PVR.png" class="img-fluid" alt="">
-    </a>
-    <div class="portfolio-info">
-      <h4>Project 3: Equipment</h4><br>
-      <p>Role: Modeling, Texturing, Lighting, Rendering, VR/AR</p>
-      <a href="./images/PVR.png"
-         data-gallery="portfolioGallery"
-         class="portfolio-lightbox preview-link"
-         title="Project 3">
-         <i class="bx bx-plus"></i>
-      </a>
-    </div>
+<footer>
+  <div class="container footer-inner">
+    <span>© 2026 Ashayla Williams. All rights reserved.</span>
+    <span><a href="mailto:ashaylawill@gmail.com">ashaylawill@gmail.com</a> · <a href="https://www.linkedin.com/in/ashaylaw" target="_blank" rel="noopener">LinkedIn</a></span>
   </div>
+</footer>
 
-       <!-- Project 4 -->
-  <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-    <a href="portfolio-details6.html" class="portfolio-img">
-      <img src="./images2/HPP.jpg" class="img-fluid" alt="">
-    </a>
-    <div class="portfolio-info">
-      <h4>Project 4: High Pressure Processing (HPP)</h4><br>
-      <p>Role: Modeling, Texturing, Lighting, Rendering, VR/AR</p>
-      <a href="./images2/HPP.jpg"
-         data-gallery="portfolioGallery"
-         class="portfolio-lightbox preview-link"
-         title="Project 4">
-         <i class="bx bx-plus"></i>
-      </a>
-    </div>
-  </div>
+<a href="#top" class="totop" aria-label="Back to top">
+  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 13V3M3 7l5-5 5 5"/></svg>
+</a>
 
-       <!-- AR Project -->
-  <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-    <a href="portfolio-details4.html" class="portfolio-img">
-      <img src="./images/Mixed Reality Sample.png" class="img-fluid" alt="">
-    </a>
-    <div class="portfolio-info">
-      <h4>AR App</h4><br>
-      <p>Task: Modeling, Texturing, Lighting, Rendering, Mixed Reality</p>
-      <a href="./images/Mixed Reality Sample.png"
-         data-gallery="portfolioGallery"
-         class="portfolio-lightbox preview-link"
-         title="AR App">
-         <i class="bx bx-plus"></i>
-      </a>
-    </div>
-  </div>
-
-         <!-- Other Project -->
-  <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-    <a href="portfolio-details5.html" class="portfolio-img">
-      <img src="./images2/bathroomMain.jpg" class="img-fluid" alt="">
-    </a>
-    <div class="portfolio-info">
-      <h4>3D Lighting</h4><br>
-      <p>Task: Modeling, Texturing, Lighting, Rendering</p>
-      <a href="./images2/bathroomMain.jpg"
-         data-gallery="portfolioGallery"
-         class="portfolio-lightbox preview-link"
-         title="3D Lighting">
-         <i class="bx bx-plus"></i>
-      </a>
-    </div>
-  </div>
-        </div>
-
-      </div>
-    </section><!-- End Portfolio Section -->
-
-     <!-- ======= Team Section ======= -->
-     <section id="team" class="team">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>About Me</h2>
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
-            <div class="member d-flex align-items-start">
-              <div class="member-info">
-                <div class="pic"><img src="./images2/AWProfile2.jpg" class="img-fluid" alt=""></div>
-                <h4>Ashayla Williams</h4>
-                <span>VR Developer</span>
-                <p>I developed a strong passion for 3D Modeling and Virtual Reality Development. My focus lies in designing immersive worlds tailored to diverse learners, particularly in Health, Job Training, and Education. My primary areas of interest encompass Virtual Reality, Training, and Research. I consistently integrate my enthusiasm for Virtual Reality into various aspects, including 3D modeling, Lighting, Rendering, Editing, and Interactivity. I am dedicated to assisting individuals and organizations in revolutionizing their businesses through AR/VR and Media Development.</p>
-                <div class="social">
-                  <a href="https://www.linkedin.com/in/ashaylaw" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-      </div>
-    </section><!-- End Team Section -->
-
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Contact</h2>
-        </div>
-
-        <div class="row">
-            <div class="info">
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p>ashaylawill@gmail.com</p>
-              </div>
-            </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Contact Section -->
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Get in Touch</h4>
-            <div class="social-links mt-3">
-              <a href="https://www.behance.net/piamon" class="behance"><i class="bx bxl-behance"></i></a>
-              <a href="https://www.linkedin.com/in/ashaylaw" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="container footer-bottom clearfix">
-      <div class="copyright">
-        &copy; Copyright <strong><span><a href="https://www.github.com/egv2/">egv2</a></span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        Designed by <a href="#">egv2</a>
-      </div>
-    </div>
-  </footer><!-- End Footer -->
-
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
+<script src="assets/js/site.js"></script>
 </body>
-
 </html>
